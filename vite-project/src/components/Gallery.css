@@ -1,0 +1,39 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Individual artwork item */
+  .artwork {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .artwork img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Artwork hover effect */
+  .artwork:hover {
+    transform: translateY(-5px);
+  }
+  
+  .artwork:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Artwork title */
+  .artwork h3 {
+    font-size: 1.2rem;
+    margin: 16px 0;
+    color: #333;
+  }
